@@ -1,0 +1,9 @@
+la pegina tendra 
+ {Tiendo al por menor con precios fijos{colecciones, carrito, imagenes y videos del producto, Filtros }}
+ {tienda al por mayor {descuentos de apartir de cierta cantidad}}
+ {listado de precios de envio}
+ {sobre mi {FAQ, Policies, }}
+ {area de anuncios}
+ {Redes en el footer}
+ {Horarios de peparacion y envio de orden}
+ {galeria, testimonios}

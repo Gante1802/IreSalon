@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Carrito de compras de Ire: revisa tus productos, envío y total."
+    />
+    <title>Ire | Carrito</title>
+    <link rel="stylesheet" href="../css/generalStyle.css" />
+    <link rel="stylesheet" href="../css/car.css" />
+  </head>
+
+  <body>
+    <div class="announcement-bar">
+      <p>Anuncio o promoción de la tienda</p>
+    </div>
+
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Ire, inicio"
+        >Logo</a
+      >
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="shop.html">Tienda</a></li>
+          <li><a href="booking.html">Agendar</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="car.html" aria-current="page">Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="cart-intro" aria-labelledby="carrito-title">
+        <h1 id="carrito-title">Carrito</h1>
+        <p>Revisa tus productos antes de finalizar el pedido.</p>
+      </section>
+
+      <section class="cart-layout" aria-label="Contenido del carrito">
+        <div class="cart-items">
+          <h2>Productos</h2>
+
+          <article class="cart-item">
+            <div
+              class="image-placeholder"
+              role="img"
+              aria-label="Espacio reservado para imagen de producto"
+            >
+              Imagen
+            </div>
+            <div class="cart-item-info">
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="cantidad-1">Cantidad</label>
+              <input
+                id="cantidad-1"
+                name="cantidad-1"
+                type="number"
+                min="1"
+                value="1"
+              />
+            </div>
+            <button class="button" type="button">Quitar</button>
+          </article>
+
+          <article class="cart-item">
+            <div
+              class="image-placeholder"
+              role="img"
+              aria-label="Espacio reservado para imagen de producto"
+            >
+              Imagen
+            </div>
+            <div class="cart-item-info">
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+            </div>
+            <div class="cart-item-quantity">
+              <label for="cantidad-2">Cantidad</label>
+              <input
+                id="cantidad-2"
+                name="cantidad-2"
+                type="number"
+                min="1"
+                value="1"
+              />
+            </div>
+            <button class="button" type="button">Quitar</button>
+          </article>
+
+          <p class="cart-empty">Tu carrito está vacío.</p>
+          <a class="button" href="shop.html">Seguir comprando</a>
+        </div>
+
+        <aside class="cart-summary" aria-labelledby="resumen-title">
+          <h2 id="resumen-title">Resumen</h2>
+          <dl>
+            <div>
+              <dt>Subtotal</dt>
+              <dd>Precio</dd>
+            </div>
+            <div>
+              <dt>Descuento por mayoreo</dt>
+              <dd>Precio</dd>
+            </div>
+            <div>
+              <dt>Envío</dt>
+              <dd>Precio</dd>
+            </div>
+            <div class="cart-total">
+              <dt>Total</dt>
+              <dd>Precio</dd>
+            </div>
+          </dl>
+          <button class="button" type="button">Finalizar pedido</button>
+          <p class="cart-note">
+            Indica aquí los tiempos de preparación y envío del pedido.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <p>Contacto: correo y redes sociales de la tienda</p>
+      <nav aria-label="Enlaces del pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="shop.html">Tienda</a>
+        <a href="../index.html#politicas">Políticas</a>
+      </nav>
+    </footer>
+  </body>
+</html>

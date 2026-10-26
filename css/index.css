@@ -1,0 +1,182 @@
+/* Home page */
+
+/* Placeholders */
+.image-placeholder--hero {
+  min-height: 420px;
+}
+
+.image-placeholder--collection {
+  aspect-ratio: 4 / 5;
+}
+
+.image-placeholder--product,
+.image-placeholder--gallery {
+  aspect-ratio: 1;
+}
+
+.image-placeholder--about {
+  min-height: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(201, 162, 39, 0.12),
+    transparent 55%
+  );
+}
+
+.hero-content h1 {
+  max-width: 16ch;
+  margin-bottom: 2rem;
+}
+
+.hero-call-to-action {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-call-to-action .button:first-child {
+  background: var(--gold-gradient);
+  color: var(--black);
+}
+
+/* Grids */
+.collection-list,
+.product-list,
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1.8rem;
+}
+
+.collection-list article,
+.product-list article {
+  text-align: center;
+}
+
+.collection-list h3,
+.product-list h3 {
+  margin-top: 1rem;
+}
+
+.collection-list article:hover .image-placeholder,
+.product-list article:hover .image-placeholder,
+.gallery-list .image-placeholder:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.see-more {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Booking promo */
+.booking-promo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  align-items: center;
+  gap: 3rem;
+}
+
+.booking-promo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.booking-promo-content h2,
+.booking-promo-content p {
+  margin: 0;
+}
+
+.booking-promo-content h2 {
+  text-align: left;
+}
+
+.booking-promo-content h2::after {
+  margin-left: 0;
+}
+
+.booking-promo-content p {
+  color: var(--muted);
+}
+
+.image-placeholder--booking {
+  aspect-ratio: 4 / 3;
+}
+
+/* FAQ & Policies */
+.policiesnfaq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 3rem;
+}
+
+details {
+  margin-top: 1.5rem;
+  padding: 1rem 1.3rem;
+  background: var(--charcoal);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+summary {
+  cursor: pointer;
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
+details[open] p {
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 5%;
+  background: var(--charcoal);
+  border-top: 1px solid var(--gold);
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-div a {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.3s;
+}
+
+.footer-div a:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder--hero {
+    min-height: 280px;
+  }
+}

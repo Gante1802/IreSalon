@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda de Ire: productos al por menor, compras al por mayor, envíos y tiempos de preparación."
+    />
+    <title>Ire | Tienda</title>
+    <link rel="stylesheet" href="../css/generalStyle.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+  </head>
+
+  <body>
+    <div class="announcement-bar">
+      <p>Anuncio o promoción de la tienda</p>
+    </div>
+
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Ire, inicio"
+        >Logo</a
+      >
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#mayoreo">Mayoreo</a></li>
+          <li><a href="../pages/gallery.html">Galería</a></li>
+          <li><a href="../pages/car.html">Carrito (0)</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="shop-intro" aria-labelledby="tienda-title">
+        <h1 id="tienda-title">Tienda</h1>
+        <p>Productos al por menor con precios fijos.</p>
+      </section>
+
+      <section id="colecciones" aria-labelledby="colecciones-title">
+        <h2 id="colecciones-title">Colecciones</h2>
+        <ul class="collection-chips">
+          <li><a class="button" href="#catalogo">Todas</a></li>
+          <li><a class="button" href="#catalogo">Colección 1</a></li>
+          <li><a class="button" href="#catalogo">Colección 2</a></li>
+          <li><a class="button" href="#catalogo">Colección 3</a></li>
+        </ul>
+      </section>
+
+      <section id="catalogo" class="catalog" aria-labelledby="catalogo-title">
+        <h2 id="catalogo-title">Productos</h2>
+
+        <div class="catalog-layout">
+          <form class="filters" aria-label="Filtros de productos">
+            <h3>Filtros</h3>
+
+            <label for="filtro-coleccion">Colección</label>
+            <select id="filtro-coleccion" name="coleccion">
+              <option value="">Todas</option>
+              <option value="1">Colección 1</option>
+              <option value="2">Colección 2</option>
+            </select>
+
+            <label for="filtro-precio">Precio máximo</label>
+            <input
+              id="filtro-precio"
+              name="precio"
+              type="range"
+              min="0"
+              max="100"
+            />
+
+            <label for="filtro-orden">Ordenar por</label>
+            <select id="filtro-orden" name="orden">
+              <option value="">Destacados</option>
+              <option value="precio-asc">Precio: menor a mayor</option>
+              <option value="precio-desc">Precio: mayor a menor</option>
+            </select>
+
+            <button class="button" type="submit">Aplicar</button>
+          </form>
+
+          <div class="product-list">
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+            <article class="product-card">
+              <div
+                class="image-placeholder image-placeholder--product"
+                role="img"
+                aria-label="Espacio reservado para imagen de producto"
+              >
+                Imagen de producto
+              </div>
+              <h3>Nombre del producto</h3>
+              <p class="price">Precio</p>
+              <button class="button" type="button">Agregar al carrito</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="mayoreo" aria-labelledby="mayoreo-title">
+        <h2 id="mayoreo-title">Compras al por mayor</h2>
+        <p>Descuentos a partir de cierta cantidad de piezas.</p>
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Descuento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Desde X piezas</td>
+              <td>X%</td>
+            </tr>
+            <tr>
+              <td>Desde Y piezas</td>
+              <td>Y%</td>
+            </tr>
+            <tr>
+              <td>Desde Z piezas</td>
+              <td>Z%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="envios" aria-labelledby="envios-title">
+        <h2 id="envios-title">Envíos</h2>
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th scope="col">Destino</th>
+              <th scope="col">Costo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Zona 1</td>
+              <td>Precio</td>
+            </tr>
+            <tr>
+              <td>Zona 2</td>
+              <td>Precio</td>
+            </tr>
+            <tr>
+              <td>Zona 3</td>
+              <td>Precio</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Horarios de preparación y envío</h3>
+        <p>
+          Indica aquí los días y horas en que se preparan y despachan los
+          pedidos.
+        </p>
+      </section>
+
+      <section id="carrito" aria-labelledby="carrito-title">
+        <h2 id="carrito-title">Carrito</h2>
+        <p>Tu carrito está vacío.</p>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <p>Contacto: correo y redes sociales de la tienda</p>
+      <nav aria-label="Enlaces del pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="gallery.html">Galería</a>
+        <a href="../index.html#politicas">Políticas</a>
+      </nav>
+    </footer>
+  </body>
+</html>

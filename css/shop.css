@@ -1,0 +1,107 @@
+/* Shop page */
+
+.shop-intro h1 {
+  margin-bottom: 1rem;
+}
+
+/* Collection filter chips */
+.collection-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.collection-chips a {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.collection-chips a:hover {
+  background: var(--gold-gradient);
+  color: var(--black);
+}
+
+/* Catalog: filters sidebar + product grid */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: var(--charcoal);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+.filters label {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.filters .button {
+  margin-top: 1rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 1.5rem;
+}
+
+.image-placeholder--product {
+  aspect-ratio: 1;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-card:hover .image-placeholder {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.product-card .button {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Wholesale and shipping tables */
+.info-table {
+  width: 100%;
+  max-width: 36rem;
+  border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+  text-align: left;
+}
+
+.info-table th {
+  color: var(--gold-light);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 40rem) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+}

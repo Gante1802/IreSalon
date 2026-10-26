@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Agenda un servicio adicional con Ire: elige servicio, fecha y horario."
+    />
+    <title>Ire | Agendar servicio</title>
+    <link rel="stylesheet" href="../css/generalStyle.css" />
+    <link rel="stylesheet" href="../css/booking.css" />
+  </head>
+
+  <body>
+    <div class="announcement-bar">
+      <p>Anuncio o promoción de la tienda</p>
+    </div>
+
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" aria-label="Ire, inicio"
+        >Logo</a
+      >
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="shop.html">Tienda</a></li>
+          <li><a href="booking.html" aria-current="page">Agendar</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="car.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="booking-intro" aria-labelledby="agendar-title">
+        <h1 id="agendar-title">Agendar servicio</h1>
+        <p>Reserva tu cita para el servicio adicional en pocos pasos.</p>
+      </section>
+
+      <section class="booking-layout" aria-label="Reserva de cita">
+        <form class="booking-form" action="#" method="post">
+          <fieldset>
+            <legend>1. Elige el servicio</legend>
+            <label
+              ><input
+                type="radio"
+                name="servicio"
+                value="servicio-1"
+                required
+              />
+              Servicio 1
+              <span class="service-meta">Duración · Precio</span></label
+            >
+            <label
+              ><input type="radio" name="servicio" value="servicio-2" />
+              Servicio 2
+              <span class="service-meta">Duración · Precio</span></label
+            >
+            <label
+              ><input type="radio" name="servicio" value="servicio-3" />
+              Servicio 3
+              <span class="service-meta">Duración · Precio</span></label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Fecha y horario</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="fecha">Fecha</label>
+                <input id="fecha" name="fecha" type="date" required />
+              </div>
+              <div class="field">
+                <label for="hora">Hora</label>
+                <select id="hora" name="hora" required>
+                  <option value="">Selecciona un horario</option>
+                  <option value="10:00">10:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="14:00">14:00</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Tus datos</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input
+                  id="nombre"
+                  name="nombre"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="correo">Correo electrónico</label>
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                autocomplete="email"
+              />
+            </div>
+            <div class="field">
+              <label for="notas">Notas</label>
+              <textarea id="notas" name="notas" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <button class="button" type="submit">Solicitar cita</button>
+        </form>
+
+        <aside class="booking-info" aria-labelledby="info-title">
+          <h2 id="info-title">Información</h2>
+          <div
+            class="image-placeholder"
+            role="img"
+            aria-label="Espacio reservado para imagen del servicio"
+          >
+            Imagen del servicio
+          </div>
+          <h3>Horarios de atención</h3>
+          <p>Indica aquí los días y horas disponibles.</p>
+          <h3>Ubicación</h3>
+          <p>Indica aquí la dirección del lugar.</p>
+          <h3>Política de cancelación</h3>
+          <p>Indica aquí cómo cambiar o cancelar una cita.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <p>Contacto: correo y redes sociales de la tienda</p>
+      <nav aria-label="Enlaces del pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="shop.html">Tienda</a>
+        <a href="../index.html#politicas">Políticas</a>
+      </nav>
+    </footer>
+  </body>
+</html>
